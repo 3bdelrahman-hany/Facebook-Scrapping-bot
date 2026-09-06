@@ -1,0 +1,26 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "indexV1": "node index.js",
+    "indexV2": "node index2.js",
+    "indexV3": "node index3.js",
+    "indexV4": "node index4.js",
+    "start": "concurrently \"npm run indexV1\" \"npm run indexV2\" \"npm run indexV3\" \"npm run indexV4\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "dotenv": "^17.4.2",
+    "puppeteer": "^25.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
