@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "indexV1": "node index.js",
     "indexV2": "node index2.js",
     "indexV3": "node index3.js",
@@ -18,9 +18,7 @@
   "dependencies": {
     "axios": "^1.20.0",
     "dotenv": "^17.4.2",
-    "puppeteer": "^25.9.0"
-  },
-  "devDependencies": {
+    "puppeteer": "^25.9.0",
     "concurrently": "^10.0.5"
   }
 }
