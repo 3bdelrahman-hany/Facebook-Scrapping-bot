@@ -196,7 +196,10 @@ async function startMonitoring() {
   console.log(`Loaded ${knownPosts.size} known posts`);
 
   const browser = await puppeteer.launch({
-    headless: true
+    headless: true,
+    browser: "firefox",
+    executablePath: process.env.EXECUTABLE_PATH_FIREFOX,
+    userDataDir: process.env.USER_DATA_DIR_1,
   });
 
   const pages = [];
